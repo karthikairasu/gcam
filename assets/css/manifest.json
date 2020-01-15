@@ -1,0 +1,33 @@
+{
+  "name": "Delicious Food",
+  "short_name": "Delicious Food",
+  "icons": [{
+    "src": "images/logo.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "images/logo.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "images/logo.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    }, {
+      "src": "images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }, {
+      "src": "images/logo.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }, {
+      "src": "images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }],
+  "start_url": "https://karthikairasu.github.io/delicious_food/index.html",
+  "display": "standalone",
+  "background_color": "#B28707",
+  "theme_color": "#B28707"
+}
