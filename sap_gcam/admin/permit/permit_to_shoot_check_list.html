@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GCAM-License</title>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 shrink-to-fit=no, user-scalable=0">
+    <link rel="icon" type="image/png" href="../../assets/images/favicon.png" sizes="194x194">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Gupter:700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/80895110d5.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/css/intlTelInput.css'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/js/intlTelInput.min.js'></script>
+    <!-- fancy Box -->
+    <link rel="stylesheet" type="text/css" href="../../assets/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+    <link href="../../assets/css/style.css" rel="stylesheet">
+  
+  </head>
+<body>
+    
+  <nav class="navbar navbar-expand bg-white navbar-light shadow fixed-top">
+    <div class="container-fluid nav_container">
+            <a class="navbar-brand gcam_logo py-0 mr-0" href="../home.html">
+        <img src="../../assets/images/logo1.png" height="50px" />
+      </a>
+      <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          
+          <li class="nav-item log_btn">
+              <a class="btn btn-sm" href="#">Logout</a>
+            </li>
+          
+        </ul>
+      </div>
+         <div class="float-right">
+        <form name="lang_switch" id="lang_switch">
+          <select name="lang" id="lang" class="form-control" style="box-shadow: none!important; border: 2px solid #45CBD3;">
+            <option  value="english">English</option>
+            <option   value="arabic">Arabic</option>
+          </select>
+        </form>
+      </div>  
+
+      <a class="navbar-brand mr-0 vision_2030">
+        <img src="../../assets/images/vision-2030.svg" />
+      </a>
+      <a class="navbar-brand mr-0" style="width: 15%; z-index: -1;"></a>
+    </div>
+    
+  </nav>
+  <div class="container-fluid breadcrump_bar px-0">
+    <div class="row mx-auto px-0">
+      <div class="col-8 px-0 text-truncate">
+        <ul class="breadcrumb mb-0">
+          <li><a href="">Home</a></li>
+                <li><a href="">Existing License List</a></li>
+                  <li> License Form</li>        </ul>
+      </div>
+      <div class="col-4 breadcrumb-rtl text-right px-0">
+        <h5 class="mb-0" style="padding: 7px 16px; color: #fff">License Form</h5>
+      </div>
+    </div>
+    
+  </div><main class="justify-content-center bg-white checklist rtl_style">
+  <div class="container">
+        <div class="row m-0">
+      <form id="chk_list_form" class="w-100 bg-white physial_distribution" action="" method="POST">
+          <table class="table p-2 mb-0">
+            <thead>
+              <tr class="table_subhead text-white">
+                <th colspan="5">Non-Objection certificate for filming</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="5" class="border border-0 py-2"></td>
+              </tr>
+              <!-- <tr>
+                <td colspan="5">Please select the status for each requirements, from the drop-down list, and provide any comments, in case of "Rejected" or "Pass with comments" status</td>
+              </tr> -->
+              <tr>
+                <th class="thead_name" width="5%">#</th>
+                <th class="thead_name" width="25%">License</th>
+                <th class="thead_name" width="25%">Value</th>
+                <!-- <th class="thead_name" width="10%">Status</th> -->
+                <!-- <th class="thead_name">Comments (If applicable)</th> -->
+              </tr>
+              <tr>
+                <td class="text-center input_value">1</td>
+                <td class="input_value">
+                  Certificate Number                </td>
+                <td class="input_value bg-white">
+                  <input type="number" name="certificate_number" value="" >
+                  <input type="hidden" name="id" value="3">
+                </td>
+                <!-- <td class="text-center">
+                  <input type="checkbox" data-toggle="toggle" data-size="sm" data-on="Yes" data-off="No" value="0" name="status_certificate_number" id="status_certificate_number" onchange="on_chkk('#status_certificate_number','.null')">
+                </td> -->
+                <!-- <td>
+                  <input class="remark w-100 h-100 border border-0 " type="text" name="comment_certificate_number">
+                </td> -->
+              </tr>
+              <tr>
+                <td class="text-center input_value">2</td>
+                <td class="input_value">
+                  Name of Licensed Entity                </td>
+                <td class="input_value">
+                  <input type="text" name="" value="sdfghjkl" readonly>
+                </td>
+                <!-- <td class="text-center">
+                  <input type="checkbox" data-toggle="toggle" data-size="sm" data-on="Yes" data-off="No" id="status_name_entity" value="0" name="status_name_entity" onchange="on_chkk('#status_name_entity','.null')">
+                </td> -->
+                <!-- <td>
+                  <input class="remark w-100 h-100 border border-0" type="text" name="comment_name_entity">
+                </td> -->
+              </tr>
+
+              <tr>
+                <td class="text-center input_value">3</td>
+                <td class="input_value">
+                  Request Number                </td>
+                <td class="input_value ">
+                  <input type="text" name="" value="RPGhJj" readonly >
+                </td>
+                <!-- <td class="text-center">
+                  <input type="hidden" name="id" value="3">
+                  <input type="checkbox" data-toggle="toggle" data-size="sm" data-on="Yes" data-off="No" value="0" name="status_license_number" id="status_license_number" onchange="on_chkk('#status_license_number','.null')">
+                </td> -->
+                <!-- <td>
+                  <input class="remark w-100 h-100 border border-0 " type="text" name="comment_license_number">
+                </td> -->
+              </tr>
+              <tr>
+                <td class="text-center input_value">4</td>
+                <td class="input_value">
+                  Issue Date                </td>
+                <td class="input_value bg-white">
+                  <input type="date" name="issue_date" format="YYYY MM DD" value="">
+                </td>
+                <!-- <td class="text-center">
+                  <input type="checkbox" data-toggle="toggle" data-size="sm" data-on="Yes" data-off="No" id="status_issue_date"  name="status_issue_date" onchange="on_chkk('#status_issue_date','.null')">
+                </td> -->
+                <!-- <td>
+                  <input class="remark w-100 h-100 border border-0" type="text" name="comment_issue_date">
+                </td> -->
+              </tr>
+              <tr>
+                <td class="text-center input_value">5</td>
+                <td class="input_value">
+                  Duration                </td>
+                <td class="input_value bg-white">
+                  <input type="text" name="duration" value="" >
+                </td>
+                <!-- <td class="text-center">
+                  <input type="checkbox" data-toggle="toggle" data-size="sm" data-on="Yes" data-off="No" id="status_duration" value="0" name="status_duration" onchange="on_chkk('#status_duration','.null')">
+                </td> -->
+                <!-- <td>
+                  <input class="remark w-100 h-100 border border-0" type="text" name="comment_duration">
+                </td> -->
+              </tr>
+              <tr>
+                <td class="text-center input_value">6</td>
+                <td class="input_value">
+                  Expiry Date                </td>
+                <td class="input_value bg-white">
+                  <input type="text" name="expiry_date" value="" >
+                </td>
+                <!-- <td class="text-center">
+                  <input type="checkbox" data-toggle="toggle" data-size="sm" data-on="Yes" data-off="No" id="status_expiry_date" value="0" name="status_expiry_date" onchange="on_chkk('#status_expiry_date','.null')">
+                </td> -->
+                <!-- <td>
+                  <input class="remark w-100 h-100 border border-0" type="text" name="comment_expiry_date">
+                </td> -->
+              </tr>
+              <tr>
+                <td class="text-center input_value">7</td>
+                <td class="input_value">
+                  Entity Incharge Person 
+                </td>
+                <td class="input_value ">
+                  <input type="text" name="" value="Arpit Jain" readonly>
+                </td>
+                <!-- <td class="text-center">
+                  <input type="checkbox" data-toggle="toggle" data-size="sm" data-on="Yes" data-off="No" id="status_entity_person" value="0" name="status_entity_person" onchange="on_chkk('#status_entity_person','.null')">
+                </td> -->
+                <!-- <td>
+                  <input class="remark w-100 h-100 border border-0" type="text" name="comment_entity_person" >
+                </td> -->
+              </tr>
+              <tr>
+                <td class="text-center input_value">8</td>
+                <td class="input_value">
+                  National ID Number                </td>
+                <td class="input_value ">
+                  <input type="number" name="" value="123456" readonly>
+                </td>
+                <!-- <td class="text-center">
+                  <input type="checkbox" data-toggle="toggle" data-size="sm" data-on="Yes" data-off="No" id="status_nid_number" value="0" name="status_nid_number" onchange="on_chkk('#status_nid_number','.null')">
+                </td> -->
+                <!-- <td>
+                  <input class="remark w-100 h-100 border border-0" type="text" name="comment_nid_number">
+                </td> -->
+              </tr>
+              
+              <tr>
+                <td class="text-center input_value">9</td>
+                <td class="input_value">
+                  License 
+                </td>
+                <td class="input_value bg-white">
+                  <input type="text" name="notice" value="">
+                </td>
+                <!-- <td class="text-center">
+                  <input type="checkbox" data-toggle="toggle" data-size="sm" data-on="Yes" data-off="No" id="status_notice" value="0" name="status_notice" onchange="on_chkk('#status_notice','.null')">
+                </td> -->
+                <!-- <td>
+                  <input class="remark w-100 h-100 border border-0" type="text" name="comment_notice">
+                </td> -->
+              </tr>
+              <tr>
+                <td class="text-center input_value">10</td>
+                <td class="input_value">
+                  CEO Signature                </td>
+                <td class="input_value bg-white">
+                  <input type="text" name="ceo_sign" value="">
+                </td>
+                <!-- <td class="text-center">
+                  <input type="checkbox" data-toggle="toggle" data-size="sm" data-on="Yes" data-off="No" id="status_ceo_sign" value="0" name="status_ceo_sign" onchange="on_chkk('#status_ceo_sign','.null')">
+                </td> -->
+                <!-- <td>
+                  <input class="remark w-100 h-100 border border-0" type="text" name="comment_ceo_sign">
+                </td> -->
+              </tr>
+              <tr>
+                <td class="text-center input_value">11</td>
+                <td class="input_value">
+                  Purpose of Shoot                </td>
+                <td class="input_value bg-white">
+                  <input type="text" name="purpose_of_shoot" value="">
+                </td>
+                <!-- <td class="text-center">
+                  <input type="checkbox" data-toggle="toggle" data-size="sm" data-on="Yes" data-off="No" id="status_purpose_of_shoot" value="0" name="status_purpose_of_shoot" onchange="on_chkk('#status_purpose_of_shoot','.null')">
+                </td> -->
+                <!-- <td>
+                  <input class="remark w-100 h-100 border border-0" type="text" name="comment_purpose_of_shoot">
+                </td> -->
+              </tr>
+              <tr>
+                <td class="text-center input_value">12</td>
+                <td class="input_value">
+                  Location of Shoot                </td>
+                <td class="input_value bg-white">
+                  <input type="text" name="location_of_shoot" value="">
+                </td>
+                <!-- <td class="text-center">
+                  <input type="checkbox" data-toggle="toggle" data-size="sm" data-on="Yes" data-off="No" id="status_location_of_shoot" value="0" name="status_location_of_shoot" onchange="on_chkk('#status_location_of_shoot','.null')">
+                </td> -->
+                <!-- <td>
+                  <input class="remark w-100 h-100 border border-0" type="text" name="comment_location_of_shoot">
+                </td> -->
+              </tr>
+              <tr>
+                <td class="text-center input_value">13</td>
+                <td class="input_value">
+                  Type of Shoot<span class="required"></span>
+                </td>
+                <td class="input_value bg-white">
+                  <input type="text" name="type_of_shoot" value="" >
+                </td>
+                <!-- <td class="text-center">
+                  <input type="checkbox" checked data-toggle="toggle" data-size="sm" data-on="Yes" data-off="No" id="status_type_of_shoot" value="1" name="status_type_of_shoot" onchange="on_chkk('#status_type_of_shoot','.null')">
+                </td> -->
+                <!-- <td>
+                  <input class="remark w-100 h-100 border border-0" type="text" name="comment_type_of_shoot">
+                </td> -->
+              </tr>
+              <tr>
+                <td class="text-center input_value">14</td>
+                <td class="input_value">
+                  Points to Consider                </td>
+                <td class="input_value bg-white">
+                  <input type="text" name="points_to_consider" value="">
+                </td>
+               <!--  <td class="text-center">
+                  <input type="checkbox" data-toggle="toggle" data-size="sm" data-on="Yes" data-off="No" id="status_points_to_consider" value="0" name="status_points_to_consider" onchange="on_chkk('#status_points_to_consider','.null')">
+                </td> -->
+                <!-- <td>
+                  <input class="remark w-100 h-100 border border-0" type="text" name="comment_points_to_consider">
+                </td> -->
+              </tr>
+
+            </tbody>
+          </table>
+
+          <div class="button-group text-center mt-5 mb-4">
+             <button type="button" class="btn btn-info" data-toggle="modal" data-target="#chk_user"> Save & Submit</button>
+           <!--  <button class="btn btn-info" type="submit" name="submit" value="ss">Save & Submit</button> -->
+           <a class="btn btn-info" href="http://192.168.0.121/gcam/admin/permit_to_shoot_edit/3">Back</a>
+          </div>
+        </form>
+    </div>
+  </div>
+</main>
+
+<!-- Modal -->
+<div class="modal" id="chk_user">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Please Confirm Your National Id</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="national_id">Enter Your National Id</label>
+            <input type="email" class="form-control" id="national_id" aria-describedby="emailHelp" placeholder="National Id" required="">
+            <span id="id_error" class="form-text text-danger"></span>
+          </div>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <a href="permit_to_shoot_list.html" type="button" onclick="chk_id()"  class="btn btn-primary" >Submit</a>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      
+
+    </div>
+  </div>
+</div>
+
+ <style>
+    @media screen and (max-width: 1337px){
+      main{
+        margin-top: 140px;
+      }
+    }
+  </style>
+  
+    <!-- Script files -->
+    <script src="../../assets/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+      
+    <script src="../../assets/script.js" type="text/javascript"></script>
+    <script src="../../assets/parsley.min.js" type="text/javascript"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      
+    </script>
+</body>
+</html>
