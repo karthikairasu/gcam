@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GCAM-License</title>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 shrink-to-fit=no, user-scalable=0">
+    <link rel="icon" type="image/png" href="../../assets/images/favicon.png" sizes="194x194">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Gupter:700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/80895110d5.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/css/intlTelInput.css'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/js/intlTelInput.min.js'></script>
+    <!-- fancy Box -->
+    <link rel="stylesheet" type="text/css" href="../../assets/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+    <link href="../../assets/css/style.css" rel="stylesheet">
+  
+  </head>
+<body>
+    
+  <nav class="navbar navbar-expand bg-white navbar-light shadow fixed-top">
+    <div class="container-fluid nav_container">
+            <a class="navbar-brand gcam_logo py-0 mr-0" href="../home.html">
+        <img src="../../assets/images/logo1.png" height="50px" />
+      </a>
+      <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          
+          <li class="nav-item log_btn">
+              <a class="btn btn-sm" href="#">Logout</a>
+            </li>
+          
+        </ul>
+      </div>
+         <div class="float-right">
+        <form name="lang_switch" id="lang_switch">
+          <select name="lang" id="lang" class="form-control" style="box-shadow: none!important; border: 2px solid #45CBD3;">
+            <option  value="english">English</option>
+            <option   value="arabic">Arabic</option>
+          </select>
+        </form>
+      </div>  
+
+      <a class="navbar-brand mr-0 vision_2030">
+        <img src="../../assets/images/vision-2030.svg" />
+      </a>
+      <a class="navbar-brand mr-0" style="width: 15%; z-index: -1;"></a>
+    </div>
+    
+  </nav>
+  <div class="container-fluid breadcrump_bar px-0">
+    <div class="row mx-auto px-0">
+      <div class="col-8 px-0 text-truncate">
+        <ul class="breadcrumb mb-0">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Manager Dashboard</a></li>
+          <li><a href="#">New License Request</a></li>
+          <li>Check Payment</li>        
+        </ul>
+      </div>
+      <div class="col-4 breadcrumb-rtl text-right px-0">
+        <h5 class="mb-0" style="padding: 7px 16px; color: #fff"></h5>
+      </div>
+    </div>
+    
+  </div><main class="justify-content-center rtl_style" style="margin-top: 140px;">
+  <div class="container w-75">
+    <div class="row m-0">
+      <form class="w-100 bg-white physial_distribution" action="" method="POST" enctype="multipart/form-data" onSubmit="return confirm('Are you realy want to Save ?');">
+        <table class="table pt-2 px-2 m-0">
+            <thead>
+              <tr class="table_subhead text-white">
+                <th colspan="3"><h5 class="my-2"><b>Fees to be Paid</b></h5></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border-0 py-1" colspan="3"><label class="label_name" for="responsible_full_name">Identify fees to be paid by the applicant for issuing and obtain the respective License. Identify type of fee (eg. Variable or fixed feed), the respective ammount and clarifying comments if required</label></td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table table-bordered">
+                        <thead class="text-center" style="color: #fff; background-color: #2f75b5;">
+                          <tr>
+                            <th class="bg-lgrey"><b>#</b></th>
+                            <th class="bg-lgrey"><b>Fee Type</b></th>
+                            <th class="bg-lgrey"><b>Fees</b></th>
+                            <th class="bg-lgrey"><b>Observations</b></th>
+                            <th class="bg-lgrey"><b>Invoice No</b></th>
+                            <th class="bg-lgrey"><b>Attachment</b></th>
+                          </tr>
+                        </thead>
+                        <tbody class="text-center">
+                                                    <tr>
+                            <td width="3%"><input class="input_value text-center" value="1"></td>
+                            <td><input class="input_value" type="text" name="awc_fee_type[]" value="FIXED" disabled></td>
+                            <td><input class="input_value" type="text" name="awc_fee[]" value="2000" disabled></td>
+                            <td><input class="input_value" type="text" name="awc_observations[]" value=""></td>
+                            <td><input class="input_value" type="text" name="awc_invoice_no[]" value="1001"></td>
+                            <td class="py-1">
+                                                            <a class="my-2 btn btn-info fancybox" href="http://ansara.in/gcam/upload/payments/atm10011.jpg">View</a>
+                                                                                                                  </td>                            
+                          </tr>
+                                                </tbody>
+                      </table>
+                            <div class="row m-0">
+        <label for="staticEmail" class="col-md-2">Comments :</label>
+        <div class="col-md-10 px-0">
+          <p class="mb-0">test</p> 
+          </div>
+        </div>
+
+         <table class="table pt-2 px-2 mb-0">
+            <thead>
+              <tr class="table_subhead text-white">
+                <th colspan="3"><h5 class="my-2"><b>Release License</b></h5></th>
+              </tr>
+            </thead>
+          </table>
+          <div class="row m-0">
+            
+            <div class="col-md-4 mt-2 d-flex justify-content-center align-items-center" style="border: solid;">
+                <a href="#" id="image_url" class="fancybox" style="display: none;">
+                  <img id="blah" src="#" alt="Image Will Come Here" style="width: 100%;height: auto;" />
+                </a> 
+                <div id="pdf_view" class="w-100 h-100" style="clear:both; display: none">
+                  <iframe id="viewer" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+                  <a href="#" id="pdf_url" class="btn btn-info text-center" target="_blank" style="display: none; margin-left: 80px; "> View Full PDF   
+                  </a> 
+                </div>
+                <div id="pdf_view1" class="w-100 h-100 generate_license" style="clear:both; display: none">
+                  <iframe id="viewer1" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+                  <a href="#" id="generate_license_url" class="btn btn-info text-center" target="_blank" style=" margin-left: 80px; "> View Full PDF   
+                  </a> 
+                </div>
+
+                <div id="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content" id="img01">
+                </div>
+            </div>
+            <div class="col-md-8 mt-3">
+              <span id="res_ajx"></span>
+              <div class="form-group row">
+                <label class="col-sm-3"><b>License Number</b></label>
+                <div class="col-sm-9">
+                  <input type="text" name="license_no" class="form-control" id="Licenseno" style="background-color: #dcebf8;border: 1px solid #b5b5b5;border-radius: 0px;" required readonly value="CID-RL97035">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3"><b>Issued Date</b></label>
+                <div class="col-sm-9">
+                  <input type="date" readonly  name="issue_date" class="form-control" id="issue_date" style="background-color: #dcebf8;border: 1px solid #b5b5b5;border-radius: 0px;" required >
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3"><b>License Validity</b></label>
+                <div class="col-sm-9">
+                  <input type="date" name="license_val" class="form-control" id="Licenseval" style="background-color: #dcebf8;border: 1px solid #b5b5b5;border-radius: 0px;" required>
+                </div>
+              </div>              
+              <!-- <div class="form-group row">
+                <label class="col-sm-3"><b>CEO</b></label>
+                <div class="col-sm-9">
+                  <input type="file" name="ceo_signature" class="form-control" id="CEO" style="background-color: #dcebf8;border: 1px solid #b5b5b5;border-radius: 0px;" required>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3"><b>Seal</b></label>
+                <div class="col-sm-9">
+                  <input type="file" name="seal" class="form-control" id="Seal" style="background-color: #dcebf8;border: 1px solid #b5b5b5;border-radius: 0px;" required>
+                </div>
+              </div> -->
+              <div class="form-group row">
+                <label class="col-sm-3"><b>License</b></label>
+                <div class="col-sm-9">
+                  <input type="file" name="license" class="form-control" id="license_up" style="background-color: #dcebf8;border: 1px solid #b5b5b5;border-radius: 0px;" required>
+                </div>
+              </div>
+              <input type="hidden" name="table" id="app_table" value="physical_distribution">   
+           <input type="hidden" name="request_no" id="request_no" value="bYy0Cp"> 
+              <div class="button-group text-center my-2">
+                                  <a target="_blank" href="http://ansara.in/gcam/upload/pdf/CID-RL97035.pdf" class="btn btn-info text-white" name="generate" id="generate">View Generated License</a>
+                  <button class="btn btn-info" type="submit" name="save" value="save" id="save">Release</button>
+                                
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+                      
+    </form>
+</div>
+</div>
+</main>
+<!-- <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+rel = "stylesheet">
+<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> -->
+<style type="text/css">
+  /* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999!important; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+  
+    <!-- Script files -->
+    <script src="../../assets/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+      
+    <script src="../../assets/script.js" type="text/javascript"></script>
+    <script src="../../assets/parsley.min.js" type="text/javascript"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      
+    </script>
+</body>
+</html>
